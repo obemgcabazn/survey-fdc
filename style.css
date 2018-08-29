@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=cyrillic');
+body {
+  font-family: 'Open Sans', arial, sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'trebuchet ms', tahoma, sans-serif;
+  color: #2069B4;
+}
+h2 {
+  font-size: 36px;
+  margin-bottom: 28px;
+}
+p, label {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.radio label {
+  padding-left: 30px;
+}
+.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox], .radio input[type=radio], .radio-inline input[type=radio] {
+  margin-left: -30px;
+}
+
+.survey-item {
+  min-height: 500px;
+  padding-top: 150px;
+  padding-left: 20px;
+  background: white;
+}
+.carousel-control {
+  background: #000;
+  opacity: 1;
+  position: relative;
+  width: auto;
+}
+.survey-btn {
+  display: block;
+  font-size: 18px;
+  color: #2069B4;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 36px;
+  margin-bottom: 50px;
+  text-shadow: none;
+}
+.start {
+  width: 200px;
+  background: none;
+  border: 1px solid #2069B4;
+}
+.start:hover {
+  background: #2069B4;
+  color: white;
+}
+.next {
+  width: 200px;
+  color: white;
+  background: #2069B4;
+}
+.next:hover {
+  color: #2069B4;
+  background: white;
+  border: 1px solid #2069B4;
+}
+.slide-start .desc {
+  margin-bottom: 50px;
+}
+
+/* Зубы */
+.RMC_points {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.RMC_points li {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 3px -4px 5px rgba(0,0,0,.09);
+  position: absolute;
+  margin-left: -4px;
+  margin-top: -4px;
+  z-index: 111;
+}
+
+.RMC_point_1{left: 1px;top: 226px;}
+.RMC_point_2{left: 11px;top: 183px;}
+.RMC_point_3{left: 23px;top: 145px;}
+.RMC_point_4{left: 40px;top: 111px;}
+.RMC_point_5{left: 61px;top: 78px;}
+.RMC_point_6{left: 85px;top: 47px;}
+.RMC_point_7{left: 114px;top: 21px;}
+.RMC_point_8{left: 147px;top: 5px;}
+.RMC_point_9{left: 209px;top: 5px;}
+.RMC_point_10{left: 241px;top: 21px;}
+.RMC_point_11{left: 271px;top: 45px;}
+.RMC_point_12{left: 295px;top: 75px;}
+.RMC_point_13{left: 316px;top: 109px;}
+.RMC_point_14{left: 330px;top: 145px;}
+.RMC_point_15{left: 344px;top: 183px;}
+.RMC_point_16{left: 354px;top: 226px;}
+.RMC_point_17{left: 2px;top: 374px;}
+.RMC_point_18{left: 11px;top: 417px;}
+.RMC_point_19{left: 24px;top: 452px;}
+.RMC_point_20{left: 40px;top: 486px;}
+.RMC_point_21{left: 60px;top: 520px;}
+.RMC_point_22{left: 86px;top: 550px;}
+.RMC_point_23{left: 110px;top: 574px;}
+.RMC_point_24{left: 147px;top: 591px;}
+.RMC_point_25{left: 208px;top: 591px;}
+.RMC_point_26{left: 242px;top: 576px;}
+.RMC_point_27{left: 268px;top: 552px;}
+.RMC_point_28{left: 295px;top: 522px;}
+.RMC_point_29{left: 316px;top: 488px;}
+.RMC_point_30{left: 332px;top: 452px;}
+.RMC_point_31{left: 344px;top: 416px;}
+.RMC_point_32{left: 352px;top: 374px;}
+.RMC_point_1 i{right: 17px;bottom: -4px;}
+.RMC_point_2 i{right: 18px;bottom: -4px;}
+.RMC_point_3 i{right: 16px;bottom: -2px;}
+.RMC_point_4 i{right: 15px;bottom: -3px;}
+.RMC_point_5 i{right: 16px;bottom: -3px;}
+.RMC_point_6 i{right: 14px;bottom: 0px;}
+.RMC_point_7 i{right: 12px;bottom: 2px;}
+.RMC_point_8 i{right: 4px;bottom: 11px;}
+.RMC_point_9 i{left: 4px;bottom: 11px;}
+.RMC_point_10 i{left: 12px;bottom: 2px;}
+.RMC_point_11 i{left: 14px;bottom: 0px;}
+.RMC_point_12 i{left: 16px;bottom: -3px;}
+.RMC_point_13 i{left: 15px;bottom: -3px;}
+.RMC_point_14 i{left: 16px;bottom: -2px;}
+.RMC_point_15 i{left: 18px;bottom: -4px;}
+.RMC_point_16 i{left: 17px;bottom: -4px;}
+.RMC_point_17 i{right: 17px;top: -4px;}
+.RMC_point_18 i{right: 18px;top: -4px;}
+.RMC_point_19 i{right: 16px;top: -2px;}
+.RMC_point_20 i{right: 15px;top: -3px;}
+.RMC_point_21 i{right: 16px;top: -3px;}
+.RMC_point_22 i{right: 14px;top: 0px;}
+.RMC_point_23 i{right: 12px;top: 2px;}
+.RMC_point_24 i{right: 4px;top: 11px;}
+.RMC_point_25 i{left: 4px;top: 11px;}
+.RMC_point_26 i{left: 12px;top: 2px;}
+.RMC_point_27 i{left: 14px;top: 0px;}
+.RMC_point_28 i{left: 16px;top: -3px;}
+.RMC_point_29 i{left: 15px;top: -3px;}
+.RMC_point_30 i{left: 16px;top: -2px;}
+.RMC_point_31 i{left: 18px;top: -4px;}
+.RMC_point_32 i{left: 17px;top: -4px;}
