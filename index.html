@@ -8,20 +8,9 @@
 
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <style>
-  .survey-item {
-    min-height: 500px;
-  }
-  .carousel-control {
-    background: #000;
-    opacity: 1;
-    height: 200px;
-    width: 200px;
-    position: relative;
-  }
-</style>
 <div class="container app">
   <div class="row">
     <form action="mail.php">
@@ -36,31 +25,44 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
           <div class="item active">
+            <div class="survey-item slide-start">
+              <h2>Узнайте о возможных в Вашем случае методах имплантации</h2>
+              <div class="row">
+                <div class="col-xs-12 col-sm-8 col-md-7">
+                  <p class="desc">Пройдите короткий тест и узнайте какие методи имплантации доступны в Вашем случае, когда следует начнать планирование имплантации и сколько времени может занять весь процесс от удаления зуба (ели это потребуется) до протезирования постоянной коронкой.</p>
+                  <a class="carousel-control start survey-btn" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span>Начать тест</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="item">
             <div class="survey-item">
 
-              <h2 class="text-center">Опрос</h2>
+              <h2>Зуб уже удален?</h2>
               <div class="row">
-                <div class="col-12 col-md-8 col-md-offset-2 text-left">
-                  <p>Удален ли зуб?</p>
+                <div class="col-xs-12 text-left">
                   <div class="radio">
                     <label>
                       <input type="radio" name="duration" id="optionsRadios1" value="2" v-model.number="duration">
-                      Да, более 2х месяцев назад
+                      Да, более двух месяцев назад
                     </label>
                   </div>
                   <div class="radio">
                     <label>
                       <input type="radio" name="duration" id="optionsRadios2" value="1" v-model.number="duration">
-                      Да, менее 2х месяцев назад
+                      Да, менее двух месяцев назад
                     </label>
                   </div>
                   <div class="radio">
                     <label>
                       <input type="radio" name="duration" id="optionsRadios3" value="0" v-model.number="duration">
-                      Нет
+                      Нет, не удален
                     </label>
                   </div>
-                  <a class="carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <a class="carousel-control survey-btn next" href="#carousel-example-generic" role="button" data-slide="next">
                     <span>Далее</span>
                   </a>
                 </div>
@@ -69,14 +71,55 @@
           </div>
           <div class="item">
             <div class="survey-item">
-              <div class="duration-wait" v-bind:class="{ hidden: !waitDisable, 'text-danger': hasError }">
+              <div class="duration-wait" v-bind:class="{ hidden: wait, 'text-danger': hasError }">
                 <p>Ждать!!!</p>
               </div>
-              <div class="duration-normal" v-bind:class="{ hidden: waitDisable, 'text-danger': hasError }">
-                <p>Идем дальше</p>
+
+              <div class="duration-normal" v-bind:class="{ hidden: !wait, 'text-danger': hasError }">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h2>Который зуб (зубы) подлежит имплантации?</h2>
+                    <p class="desc">Отметьте на карте и нажмите кнопку «Далее»</p>
+                    <img src="img/old_tooth.png" alt="">
+                    <ul class="RMC_points">
+                      <li class="RMC_point_1" data-area-link="2028" data-area="2028"><i>viii(8)</i></li>
+                      <li class="RMC_point_2" data-area-link="2027" data-area="2027"><i>vii(7)</i></li>
+                      <li class="RMC_point_3" data-area-link="2026" data-area="2026"><i>vi(6)</i></li>
+                      <li class="RMC_point_4" data-area-link="2025" data-area="2025"><i>v(5)</i></li>
+                      <li class="RMC_point_5" data-area-link="2024" data-area="2024"><i>iv(4)</i></li>
+                      <li class="RMC_point_6" data-area-link="2023" data-area="2023"><i>iii(3)</i></li>
+                      <li class="RMC_point_7" data-area-link="2022" data-area="2022"><i>ii(2)</i></li>
+                      <li class="RMC_point_8" data-area-link="2021" data-area="2021"><i>i(1)</i></li>
+                      <li class="RMC_point_9" data-area-link="2032" data-area="2032"><i>i(1)</i></li>
+                      <li class="RMC_point_10" data-area-link="2033" data-area="2033"><i>ii(2)</i></li>
+                      <li class="RMC_point_11" data-area-link="2034" data-area="2034"><i>iii(3)</i></li>
+                      <li class="RMC_point_12" data-area-link="2035" data-area="2035"><i>iv(4)</i></li>
+                      <li class="RMC_point_13" data-area-link="2036" data-area="2036"><i>v(5)</i></li>
+                      <li class="RMC_point_14" data-area-link="2037" data-area="2037"><i>vi(6)</i></li>
+                      <li class="RMC_point_15" data-area-link="2038" data-area="2038"><i>vii(7)</i></li>
+                      <li class="RMC_point_16" data-area-link="2039" data-area="2039"><i>viii(8)</i></li>
+                      <li class="RMC_point_17" data-area-link="2061" data-area="2061"><i>viii(8)</i></li>
+                      <li class="RMC_point_18" data-area-link="2060" data-area="2060"><i>vii(7)</i></li>
+                      <li class="RMC_point_19" data-area-link="2059" data-area="2059"><i>vi(6)</i></li>
+                      <li class="RMC_point_20" data-area-link="2058" data-area="2058"><i>v(5)</i></li>
+                      <li class="RMC_point_21" data-area-link="2057" data-area="2057"><i>iv(4)</i></li>
+                      <li class="RMC_point_22" data-area-link="2056" data-area="2056"><i>iii(3)</i></li>
+                      <li class="RMC_point_23" data-area-link="2055" data-area="2055"><i>ii(2)</i></li>
+                      <li class="RMC_point_24" data-area-link="2054" data-area="2054"><i>i(1)</i></li>
+                      <li class="RMC_point_25" data-area-link="2043" data-area="2043"><i>i(1)</i></li>
+                      <li class="RMC_point_26" data-area-link="2044" data-area="2044"><i>ii(2)</i></li>
+                      <li class="RMC_point_27" data-area-link="2045" data-area="2045"><i>iii(3)</i></li>
+                      <li class="RMC_point_28" data-area-link="2046" data-area="2046"><i>iv(4)</i></li>
+                      <li class="RMC_point_29" data-area-link="2047" data-area="2047"><i>v(5)</i></li>
+                      <li class="RMC_point_30" data-area-link="2048" data-area="2048"><i>vi(6)</i></li>
+                      <li class="RMC_point_31" data-area-link="2049" data-area="2049"><i>vii(7)</i></li>
+                      <li class="RMC_point_32" data-area-link="2050" data-area="2050"><i>viii(8)</i></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
               
-              <a class="carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <a class="carousel-control survey-btn next" href="#carousel-example-generic" role="button" data-slide="next">
                 <span>Далее</span>
               </a>
             </div>

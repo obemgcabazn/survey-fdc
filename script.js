@@ -9,12 +9,20 @@
     output: function() {
       return this.duration;
     },
-    waitDisable: function() {
+    wait: function() {
       if (this.duration == 1) {
-        return true;
-      } else {
         return false;
+      } else {
+        return true;
       }
     }
   }
-})
+});
+
+// (function($){
+//   $(function(){
+//     $('.carousel').carousel({
+      
+//     })
+//   });
+// })(jQuery)

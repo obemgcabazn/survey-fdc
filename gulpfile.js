@@ -7,6 +7,7 @@ var gulp      = require('gulp'),
 gulp.task('watch', function(){
   livereload.listen();
   gulp.watch('index.html').on('change', livereload.changed);
+  gulp.watch('style.css').on('change', livereload.changed);
 });
 
 gulp.task(
