@@ -67,6 +67,90 @@ p, label {
 }
 
 /* Зубы */
+.rubrikator_module_constant_complex {
+    position: absolute;
+/*    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;*/
+    margin: auto;
+    width: 354px;
+    height: 597px;
+}
+.RMC_complete {
+    background: url(img/old_tooth.png) no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.RMC_highlight {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+.RMC_highlight li {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: block;
+    position: absolute;
+    background: #ff9422;
+    margin-left: 7px;
+    margin-top: -7px;
+    display: none;
+}
+.RMM_highlight li.ss, .RMM_highlight li.st, .RMC_highlight li.st, .RMC_highlight li.ss {
+    display: block;
+}
+.RMC_hl_01{left: 66px;top: 221px;}
+.RMC_hl_02{left: 72px;top: 183px;}
+.RMC_hl_03{left: 79px;top: 140px;}
+.RMC_hl_04{left: 92px;top: 108px;}
+.RMC_hl_05{left: 105px;top: 81px;}
+.RMC_hl_06{left: 119px;top: 59px;}
+.RMC_hl_07{left: 138px;top: 47px;}
+.RMC_hl_08{left: 162px;top: 35px;}
+.RMC_hl_09{left: 191px;top: 34px;}
+.RMC_hl_10{left: 213px;top: 47px;}
+.RMC_hl_11{left: 234px;top: 63px;}
+.RMC_hl_12{left: 252px;top: 86px;}
+.RMC_hl_13{left: 266px;top: 112px;}
+.RMC_hl_14{left: 274px;top: 143px;}
+.RMC_hl_15{left: 284px;top: 182px;}
+.RMC_hl_16{left: 290px;top: 222px;}
+.RMC_hl_17{left: 61px;top: 347px;}
+.RMC_hl_18{left: 80px;top: 384px;}
+.RMC_hl_19{left: 95px;top: 420px;}
+.RMC_hl_20{left: 104px;top: 458px;}
+.RMC_hl_21{left: 117px;top: 488px;}
+.RMC_hl_22{left: 128px;top: 515px;}
+.RMC_hl_23{left: 146px;top: 528px;}
+.RMC_hl_24{left: 168px;top: 536px;}
+.RMC_hl_25{left: 191px;top: 534px;}
+.RMC_hl_26{left: 213px;top: 526px;}
+.RMC_hl_27{left: 230px;top: 515px;}
+.RMC_hl_28{left: 244px;top: 487px;}
+.RMC_hl_29{left: 257px;top: 455px;}
+.RMC_hl_30{left: 265px;top: 419px;}
+.RMC_hl_31{left: 282px;top: 382px;}
+.RMC_hl_32{left: 300px;top: 341px;}
+
+.RMC_overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+area {
+    cursor: pointer !important;
+    display: block;
+}
 .RMC_points {
   list-style-type: none;
   padding: 0;
@@ -83,6 +167,17 @@ p, label {
   margin-left: -4px;
   margin-top: -4px;
   z-index: 111;
+}
+.RMC_points li.ss{
+  box-shadow: 0 0 0 3px #fda140;
+}
+
+.RMM_top_points li i, .RMM_bottom_points li i, .RMC_points i {
+  text-transform: uppercase;
+  color: #fff;
+  font-style: normal;
+  font-size: 14px;
+  position: absolute;
 }
 
 .RMC_point_1{left: 1px;top: 226px;}
