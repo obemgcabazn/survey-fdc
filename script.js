@@ -21,7 +21,7 @@
   }
 });
 
-(function($){
+;(function($){
   $(function(){
 
       $('area[data-area-link]').hover(function(){
@@ -45,7 +45,7 @@
           var el=$(this).attr('data-area-link');
           $('[data-area="'+$(this).data('area-link')+'"]').toggleClass('ss st');
           
-          console.log($('li.st[class*=RMC_point]'));
+          //console.log($('li.st[class*=RMC_point]'));
           
           arr = $('li.st[class*=RMC_point]');
           var toothData = new Array();
@@ -65,8 +65,30 @@
 
           }
 
-          // console.log(toothData);
+          console.log(toothData);
       })
+
+      // Отправка формы
+      $('.call-back-form').submit(function(e){
+        e.preventDefault();
+        var m_method=$(this).attr('method');
+        var m_action=$(this).attr('action');
+        var m_data=$(this).serialize();
+        
+        $.ajax({
+          type: m_method,
+          url: m_action,
+          data: m_data,
+          success: function(result){
+            $('.modal-title').css("visibility", "hidden");
+            // $('.call-back-form').css("display", "none");
+            $('.form-result').css("display", "block");
+            console.log(m_data);
+            $('.ajax-call-back-result').text(result);
+            // yaCounter19721623.reachGoal('modal-form');
+          }
+        });
+      });
 
   });
 })(jQuery)

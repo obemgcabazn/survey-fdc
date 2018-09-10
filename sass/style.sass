@@ -7,6 +7,8 @@ $red: #C8212A
 $left: 100px
 $top: 40px
 
+a:focus
+  outline: none
 
 .red
   color: $red
@@ -75,10 +77,13 @@ p, label
   border: 1px solid #2069B4;
   background: white
   color: $blue
+  cursor: pointer
   &:hover 
     color: white
     background: $blue
     border: 1px solid $blue
+  span
+    cursor: pointer
 
 .fake-button
   background: white
@@ -93,6 +98,7 @@ p, label
     margin-bottom: 50px
 
 .item .final
+  padding-top: 70px
   padding-bottom: 50px
   label.for-input
     font-size: 18px

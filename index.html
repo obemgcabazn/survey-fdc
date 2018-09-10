@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Консультация имплантолога онлайн</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -11,24 +11,17 @@
 <body>
 <div class="container app">
   <div class="row">
-    <form action="mail.php">
+    <form action="api/mail.php" class="call-back-form" method="POST">
       <div id="fdc-survey" class="carousel slide" data-ride="carousel" data-interval="false">
-        <!-- Indicators -->
-<!--         <ol class="carousel-indicators">
-          <li data-target="#fdc-survey" data-slide-to="0" class="active"></li>
-          <li data-target="#fdc-survey" data-slide-to="1"></li>
-          <li data-target="#fdc-survey" data-slide-to="2"></li>
-          <li data-target="#fdc-survey" data-slide-to="3"></li>
-        </ol> -->
         
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="item">
+          <div class="item active">
             <div class="survey-item slide-start">
               <h2>Узнайте о возможных в Вашем случае методах имплантации</h2>
               <div class="row">
                 <div class="col-xs-12 col-sm-8 col-md-7">
-                  <p class="desc">Пройдите короткий тест и узнайте какие методи имплантации доступны в Вашем случае, когда следует начнать планирование имплантации и сколько времени может занять весь процесс от удаления зуба (ели это потребуется) до протезирования постоянной коронкой.</p>
+                  <p class="desc">Пройдите короткий тест и узнайте какие методи имплантации доступны в Вашем случае, когда следует начинать планирование имплантации и сколько времени может занять весь процесс от удаления зуба (если это потребуется) до протезирования постоянной коронкой.</p>
                   <a class="carousel-control start survey-btn" href="#fdc-survey" role="button" data-slide="next">
                     <span>Начать тест</span>
                   </a>
@@ -79,7 +72,7 @@
                       <div class="RMC_layer">
                         <div class="RMC_complete"></div>
                         <ul class="RMC_highlight">
-                          <li data-area="2028" class="RMC_hl_01"></li>
+                          <!-- <li data-area="2028" class="RMC_hl_01"></li> -->
                           <li data-area="2027" class="RMC_hl_02"></li>
                           <li data-area="2026" class="RMC_hl_03"></li>
                           <li data-area="2025" class="RMC_hl_04"></li>
@@ -94,8 +87,8 @@
                           <li data-area="2036" class="RMC_hl_13"></li>
                           <li data-area="2037" class="RMC_hl_14"></li>
                           <li data-area="2038" class="RMC_hl_15"></li>
-                          <li data-area="2039" class="RMC_hl_16"></li>
-                          <li data-area="2061" class="RMC_hl_17"></li>
+                          <!-- <li data-area="2039" class="RMC_hl_16"></li> -->
+                          <!-- <li data-area="2061" class="RMC_hl_17"></li> -->
                           <li data-area="2060" class="RMC_hl_18"></li>
                           <li data-area="2059" class="RMC_hl_19"></li>
                           <li data-area="2058" class="RMC_hl_20"></li>
@@ -110,12 +103,12 @@
                           <li data-area="2047" class="RMC_hl_29"></li>
                           <li data-area="2048" class="RMC_hl_30"></li>
                           <li data-area="2049" class="RMC_hl_31"></li>
-                          <li data-area="2050" class="RMC_hl_32"></li>
+                          <!-- <li data-area="2050" class="RMC_hl_32"></li> -->
                         </ul>
                         <div class="RMC_overlay live">
                           <img src="img/blank.gif" alt="" width="341" height="600" usemap="#cjaw_map">
                           <map name="cjaw_map" id="cjaw_map">
-                            <area shape="poly" coords="320,322,320,359,283,359,283,322" nohref="nohref" data-area-link="2050">
+                            <!-- <area shape="poly" coords="320,322,320,359,283,359,283,322" nohref="nohref" data-area-link="2050"> -->
                             <area shape="poly" coords="301,365,301,398,264,398,264,365" nohref="nohref" data-area-link="2049">
                             <area shape="poly" coords="280,407,280,433,250,433,250,407" nohref="nohref" data-area-link="2048">
                             <area shape="poly" coords="269,441,269,470,240,470,240,441" nohref="nohref" data-area-link="2047">
@@ -130,8 +123,8 @@
                             <area shape="poly" coords="117,446,117,472,87,472,87,446" nohref="nohref" data-area-link="2058">
                             <area shape="poly" coords="111,410,111,438,78,438,78,410" nohref="nohref" data-area-link="2059">
                             <area shape="poly" coords="96,369,96,401,60,401,60,369" nohref="nohref" data-area-link="2060">
-                            <area shape="poly" coords="77,326,77,360,39,360,39,326" nohref="nohref" data-area-link="2061">
-                            <area shape="poly" coords="311,207,311,237,274,237,274,207" nohref="nohref" data-area-link="2039">
+                            <!-- <area shape="poly" coords="77,326,77,360,39,360,39,326" nohref="nohref" data-area-link="2061"> -->
+                            <!-- <area shape="poly" coords="311,207,311,237,274,237,274,207" nohref="nohref" data-area-link="2039"> -->
                             <area shape="poly" coords="303,167,303,197,269,197,269,167" nohref="nohref" data-area-link="2038">
                             <area shape="poly" coords="289,130,289,155,261,155,261,130" nohref="nohref" data-area-link="2037">
                             <area shape="poly" coords="279,100,279,124,253,124,253,100" nohref="nohref" data-area-link="2036">
@@ -146,11 +139,11 @@
                             <area shape="poly" coords="104,97,104,123,75,123,75,97" nohref="nohref" data-area-link="2025">
                             <area shape="poly" coords="96,127,96,157,61,157,61,127" nohref="nohref" data-area-link="2026">
                             <area shape="poly" coords="90,165,90,202,45,202,45,165" nohref="nohref" data-area-link="2027">
-                            <area shape="poly" coords="83,208,83,244,43,244,43,208" nohref="nohref" data-area-link="2028">
+                            <!-- <area shape="poly" coords="83,208,83,244,43,244,43,208" nohref="nohref" data-area-link="2028"> -->
                           </map>
                         </div>
                         <ul class="RMC_points">
-                          <li class="RMC_point_1" data-area-link="2028" data-area="2028"><i>18</i></li>
+                          <!-- <li class="RMC_point_1" data-area-link="2028" data-area="2028"><i>18</i></li> -->
                           <li class="RMC_point_2" data-area-link="2027" data-area="2027"><i>17</i></li>
                           <li class="RMC_point_3" data-area-link="2026" data-area="2026"><i>16</i></li>
                           <li class="RMC_point_4" data-area-link="2025" data-area="2025"><i>15</i></li>
@@ -165,8 +158,8 @@
                           <li class="RMC_point_13" data-area-link="2036" data-area="2036"><i>25</i></li>
                           <li class="RMC_point_14" data-area-link="2037" data-area="2037"><i>26</i></li>
                           <li class="RMC_point_15" data-area-link="2038" data-area="2038"><i>27</i></li>
-                          <li class="RMC_point_16" data-area-link="2039" data-area="2039"><i>28</i></li>
-                          <li class="RMC_point_17" data-area-link="2061" data-area="2061"><i>48</i></li>
+                          <!-- <li class="RMC_point_16" data-area-link="2039" data-area="2039"><i>28</i></li> -->
+                          <!-- <li class="RMC_point_17" data-area-link="2061" data-area="2061"><i>48</i></li> -->
                           <li class="RMC_point_18" data-area-link="2060" data-area="2060"><i>47</i></li>
                           <li class="RMC_point_19" data-area-link="2059" data-area="2059"><i>46</i></li>
                           <li class="RMC_point_20" data-area-link="2058" data-area="2058"><i>45</i></li>
@@ -181,7 +174,7 @@
                           <li class="RMC_point_29" data-area-link="2047" data-area="2047"><i>35</i></li>
                           <li class="RMC_point_30" data-area-link="2048" data-area="2048"><i>36</i></li>
                           <li class="RMC_point_31" data-area-link="2049" data-area="2049"><i>37</i></li>
-                          <li class="RMC_point_32" data-area-link="2050" data-area="2050"><i>38</i></li>
+                          <!-- <li class="RMC_point_32" data-area-link="2050" data-area="2050"><i>38</i></li> -->
                         </ul>
                       </div>
                     </div>
@@ -213,49 +206,49 @@
                   
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="schitovidka">
-                      Заболеваня щитовидной железы
+                      <input type="checkbox" value="schitovidka" name="contraindocations[]">
+                      Заболевания щитовидной железы
                     </label>
                   </div>
                   
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="parodontoz">
+                      <input type="checkbox" value="parodontoz" name="contraindocations[]">
                       Пародонтоз
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="krov">
+                      <input type="checkbox" value="krov" name="contraindocations[]">
                       Системные заболевания крови
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="tuberkulez">
+                      <input type="checkbox" value="tuberkulez" name="contraindocations[]">
                       Туберкулез
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="diabet">
+                      <input type="checkbox" value="diabet" name="contraindocations[]">
                       Сахарный диабет
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="onkologiyz">
+                      <input type="checkbox" value="onkologiyz" name="contraindocations[]">
                       Онкологические заболевания
                     </label>
                   </div>
 
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox" value="osteoporoz">
+                      <input type="checkbox" value="osteoporoz" name="contraindocations[]">
                       Остеопороз
                     </label>
                   </div>
@@ -268,25 +261,31 @@
               </div>
             </div>
           </div>
-          <div class="item active">
+          <div class="item">
             <div class="survey-item final">
               <div class="row">
                 <div class="col-xs-12 col-md-7">
                   <h2>Спасибо!</h2>
                   <p class="desc">Чтобы получить результаты, введите адрес электронной почты и имя, и мы немедленно вышлем их Вам!</p>
+
+                  <div class="ajax-call-back-result"></div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-md-3">
                   <div class="form-group">
                     <label for="exampleInputName2" class="for-input">Имя <span class="red">*</span></label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Иван Иванов" required="true">
+                    <input type="text" name="name" class="form-control" id="exampleInputName2" placeholder="Иван Иванов" required="true">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputEmail1" class="for-input">Email <span class="red">*</span></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="ivan@gmail.com" required="true">
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1" placeholder="ivan@gmail.com" required="true">
                   </div>
                   <button class="final-button">Узнать результат</button>
+
+                  <a class="carousel-control survey-btn fake-button">
+                    <span>Узнать результат</span>
+                  </a>
                 </div>
               </div>
               <div class="row">
