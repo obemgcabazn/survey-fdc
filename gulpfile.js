@@ -15,6 +15,7 @@ var gulp      = require('gulp'),
 gulp.task('watch', function(){
   livereload.listen();
   gulp.watch('*.html').on('change', livereload.changed);
+  gulp.watch('**/*.php').on('change', livereload.changed);
   gulp.watch('*.js').on('change', livereload.changed);
   gulp.watch('style.css').on('change', livereload.changed);
   gulp.watch('sass/*.sass', gulp.series('sass'));
