@@ -24,31 +24,33 @@
 ;(function($){
   $(function(){
 
-      $('area[data-area-link]').hover(function(){
-          if($(this).parents('.live').length){
-              $('[data-area="'+$(this).data('area-link')+'"]').addClass('ss');
-              if($(this).parents('.jaw_anatomy').length){
-                  $('.rubrikator_module_tooth_navi [data-area-link="'+$(this).data('area-link')+'"]').addClass('hl');
-              }
-          }
-      },function(){
-          if($(this).parents('.live').length){
-              $('[data-area="'+$(this).data('area-link')+'"]').removeClass('ss');
-              if($(this).parents('.jaw_anatomy').length){
-                  $('.rubrikator_module_tooth_navi [data-area-link="'+$(this).data('area-link')+'"]').removeClass('hl');
-              }
-          }
-      })
+    var toothData = new Array();
 
-      $('[data-area-link]').click(function(e){
-          e.preventDefault();
-          var el=$(this).attr('data-area-link');
-          $('[data-area="'+$(this).data('area-link')+'"]').toggleClass('ss st');
-          
+    $('area[data-area-link]').hover(function(){
+      if($(this).parents('.live').length){
+        $('[data-area="'+$(this).data('area-link')+'"]').addClass('ss');
+        if($(this).parents('.jaw_anatomy').length){
+          $('.rubrikator_module_tooth_navi [data-area-link="'+$(this).data('area-link')+'"]').addClass('hl');
+        }
+      }
+    },function(){
+      if($(this).parents('.live').length){
+        $('[data-area="'+$(this).data('area-link')+'"]').removeClass('ss');
+        if($(this).parents('.jaw_anatomy').length){
+          $('.rubrikator_module_tooth_navi [data-area-link="'+$(this).data('area-link')+'"]').removeClass('hl');
+        }
+      }
+    })
+
+    $('[data-area-link]').click(function(e){
+      e.preventDefault();
+      var el=$(this).attr('data-area-link');
+      $('[data-area="'+$(this).data('area-link')+'"]').toggleClass('ss st');
+
           //console.log($('li.st[class*=RMC_point]'));
           
           arr = $('li.st[class*=RMC_point]');
-          var toothData = new Array();
+          toothData = [];
           arr.each( function(){ 
             toothData.push($(this).text());
           });
@@ -64,9 +66,9 @@
             fakeButton.addClass('hidden');
 
           }
-
           console.log(toothData);
-      })
+          return toothData;
+        })
 
       // Отправка формы
       $('.call-back-form').submit(function(e){
@@ -74,6 +76,9 @@
         var m_method=$(this).attr('method');
         var m_action=$(this).attr('action');
         var m_data=$(this).serialize();
+        toothData.forEach( function(v, i, toothData) {
+         m_data += "&tooth[]=" + toothData[i];
+       } );
         $.ajax({
           type: m_method,
           url: m_action,
@@ -89,5 +94,5 @@
         });
       });
 
-  });
+    });
 })(jQuery)
